@@ -8,7 +8,7 @@
 import math
 
 def test_filter():
-    assert list(filter(lambda x: x[1] in 1234, [345, 321, 567, 695])) == [345, 321], 'test filter error'
+    assert list(filter(lambda x: x[1] in 'abcd', ['adc', 'cbd', 'dbc', 'fgh'])) == ['adc', 'cbd', 'dbc'], 'test  error'
     assert list(filter(None, [-2, -1, 0, 1, 2])) == [-2, -1, 1, 2], 'test filter error'
 
 def test_map():
